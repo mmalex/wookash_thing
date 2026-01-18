@@ -6828,6 +6828,18 @@
 		(uuid 61d0287f-b27e-4145-a593-3116b1d359a4)
 	)
 	(rectangle
+		(start 233.68 48.26)
+		(end 274.32 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7862e807-33ce-4a4a-a93d-47ed481226b3)
+	)
+	(rectangle
 		(start 289.56 48.26)
 		(end 381 91.44)
 		(stroke
@@ -6886,6 +6898,18 @@
 			)
 		)
 		(uuid "6b401828-07a5-468a-940e-0ebf31205774")
+	)
+	(text "qwiic connector"
+		(exclude_from_sim no)
+		(at 254.762 51.308 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "7d947406-ea2d-4ac2-b006-ceab5b619fb9")
 	)
 	(text "RP2040 MCU + flash rom + crystal"
 		(exclude_from_sim no)
