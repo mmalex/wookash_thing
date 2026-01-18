@@ -1,0 +1,4 @@
+sw/build/
+hw/testy-backups/**
+hw/production/backups/**
+.DS_Store

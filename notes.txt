@@ -1,0 +1,56 @@
+
+33ohm - C25105
+1k - C11702 (crystal)
+5.1k - C25905
+10k pullup - C25744
+
+18pf crystal cap C1549
+100n C307331
+1u C52923
+10u C15850
+
+usbc connector - C2765186 - 5.1k cc1 & cc2
+3.3v reg (big) - C6186
+3.3v reg (small) - C51118 - 10u on input, 1u on output
+battery charging ic - C15220 - TD to gnd; TS 10k to gnd, iset+ilm 1k to gnd, en1 +out, en2 gnd
+charging led - C434448
+
+cpu rp2040 - C2040 - 5+1 3v3 caps, 2+1 1v1 caps; run 10k hi, SS 10k hi + jumper lo
+winbond flash rom - big -> C97521, tiny -> C2843335
+crystal - C284155 - 1k series on xout
+programming header - C160403 - 1=clk, 3=data
+
+accelerometer - C189624; CS and SA0 high.
+
+mosfet for beeper - C20917 - 33ohm on gate and drain to speaker.
+
+mx keyboard - C41430893
+reverse mount led - C5149201
+
+-----
+keyboard lib - https://github.com/ebastler/marbastlib
+easyeda2kicad - https://github.com/uPesy/easyeda2kicad.py
+jlc part search - https://yaqwsx.github.io/jlcparts/#/
+keyswitch 3d models https://github.com/koktoh/keyswitch_model.git
+-----
+  void stdio_rtt_init(void);
+  stdio_rtt_init();
+
+"openOCDLaunchCommands": [
+                "adapter speed 5000"
+            ],
+            "rttConfig": {
+                "enabled": true,
+                "address": "auto",
+                "clearSearch": false,
+                "polling_interval": 10,
+                "rtt_start_retry": 10000,
+                "decoders": [
+                    {
+                        "label": "Wookash Debug",
+                        "port": 0,
+                        "timestamp": true,
+                        "type": "console"
+                    }
+                ]
+            }
