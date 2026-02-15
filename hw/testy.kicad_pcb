@@ -5646,7 +5646,7 @@
 				)
 			)
 		)
-		(property "Value" "1M"
+		(property "Value" "100K"
 			(at 0 4 0)
 			(layer "F.Fab")
 			(uuid "9dd690be-049b-422c-b49e-1dedb8b464d3")
@@ -5681,7 +5681,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C26083"
+		(property "LCSC Part" "C25803"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
